@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>SAVAGE | Tienda de chimpunes</title>
+ <link rel="stylesheet" href="prime.styless.css">
+ <script src="script.js" defer></script>
+</head>
+<body>
+<header class="encabezado">
+ <a class="logo" href="#inicio">SAVAGE</a>
+ <nav class="menu">
+  <a href="index.html">Inicio</a>
+  <a href="#quienes-somos">Quiénes somos</a>
+  <a href="#tienda">Tienda</a>
+  <a href="#destacados">Destacados</a>
+  <a href="#contacto">Contacto</a>
+ </nav>
+</header>
+<main>
+ <!-- INICIO -->
+ <section id="inicio" class="seccion inicio">
+  <div class="texto-inicio">
+   <h1>SAVAGE</h1>
+   <p class="subtitulo">Pasión, fútbol y estilo</p>
+   <p>Encuentra tus chimpunes favoritos y prepárate para jugar.</p>
+   <a href="#tienda" class="boton-principal">Ver productos</a>
+   <div class="redes redes-inicio">
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
+   </div>
+  </div>
+  <div class="frase">
+   <p>Cada grito de gol<br>es una alegría para nosotros</p>
+  </div>
+ </section>
+ 
+ <!-- QUIÉNES SOMOS -->
+ <section id="quienes-somos" class="seccion quienes">
+  <h2>Quiénes somos</h2>
+  <div class="quienes-contenido">
+   <article class="sobre-savage">
+    <h3>Sobre SAVAGE</h3>
+    <p>SAVAGE es una tienda dedicada a la venta de chimpunes y zapatillas deportivas.</p>
+    <p>Ofrecemos modelos para jugadores que buscan comodidad, calidad y estilo.</p>
+    <p>Nuestro objetivo es brindar buena atención y opciones para cada cliente.</p>
+   </article>
+   <article class="mision">
+    <h3>Misión</h3>
+    <p>Ofrecer calzado deportivo para acompañar a nuestros clientes en sus entrenamientos y partidos.</p>
+    <div class="imagen-mision">
+     <img src="/adidas 1.webp" alt="Calzado deportivo">
+    </div>
+   </article>
+  </div>
+  <div class="redes-quienes">
+   <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+   <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+   <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
+  </div>
+ </section>
+
+ <!-- TIENDA -->
+ <section id="tienda" class="seccion tienda">
+  <h2>Tienda</h2>
+  <div class="buscador">
+   <input type="text" id="buscar-producto" placeholder="Buscar producto..." aria-label="Buscar producto">
+   <button type="button" id="boton-buscar">Buscar</button>
+  </div>
+  <p id="mensaje-busqueda" class="mensaje-busqueda"></p>
+  <div class="tienda-contenido">
+   <div class="productos">
+    <article class="producto" data-nombre="Nike Air Max">
+     <div class="imagen-producto">
+      <img src="/niike 1.webp" alt="Nike Air Max">
+     </div>
+     <h3>Nike Air Max</h3>
+     <p>Zapatilla deportiva para uso diario.</p>
+     <span class="precio">S/ 299.00</span>
+     <div class="botones-producto">
+      <a href="#producto1" class="boton-info">Ver información</a>
+      <button class="boton agregar" data-nombre="Nike Air Max" data-precio="299">Añadir al carrito</button>
+     </div>
+    </article>
+    <article class="producto" data-nombre="Adidas Predator">
+     <div class="imagen-producto">
+      <img src="/Mercurial3.webp" alt="Adidas Predator">
+     </div>
+     <h3>Adidas Predator</h3>
+     <p>Chimpunes para fútbol y entrenamiento.</p>
+     <span class="precio">S/ 349.00</span>
+     <div class="botones-producto">
+      <a href="#producto2" class="boton-info">Ver información</a>
+      <button class="boton agregar" data-nombre="Adidas Predator" data-precio="349">Añadir al carrito</button>
+     </div>
+    </article>
+    <article class="producto" data-nombre="Puma Future">
+     <div class="imagen-producto">
+      <img src="/adidas 3.jpg" alt="Puma Future">
+     </div>
+     <h3>Puma Future</h3>
+     <p>Diseño deportivo con buen ajuste.</p>
+     <span class="precio">S/ 279.00</span>
+     <div class="botones-producto">
+      <a href="#producto3" class="boton-info">Ver información</a>
+      <button class="boton agregar" data-nombre="Puma Future" data-precio="279">Añadir al carrito</button>
+     </div>
+    </article>
+    <article class="producto" data-nombre="Nike Mercurial">
+     <div class="imagen-producto">
+      <img src="/nike 2.webp" alt="Nike Mercurial">
+     </div>
+     <h3>Nike Mercurial</h3>
+     <p>Modelo ligero para jugadores veloces.</p>
+     <span class="precio">S/ 329.00</span>
+     <div class="botones-producto">
+      <a href="#producto4" class="boton-info">Ver información</a>
+      <button class="boton agregar" data-nombre="Nike Mercurial" data-precio="329">Añadir al carrito</button>
+     </div>
+    </article>
+    <article class="producto" data-nombre="Adidas F50">
+     <div class="imagen-producto">
+      <img src="/adidas 6.jpg" alt="Adidas F50">
+     </div>
+     <h3>Adidas F50</h3>
+     <p>Chimpunes con diseño ligero.</p>
+     <span class="precio">S/ 359.00</span>
+     <div class="botones-producto">
+      <a href="#producto5" class="boton-info">Ver información</a>
+      <button class="boton agregar" data-nombre="Adidas F50" data-precio="359">Añadir al carrito</button>
+     </div>
+    </article>
+    <article class="producto" data-nombre="Nike Phantom">
+     <div class="imagen-producto">
+      <img src="/nike 3.webp" alt="Nike Phantom">
+     </div>
+     <h3>Nike Phantom</h3>
+     <p>Modelo deportivo para jugar fútbol.</p>
+     <span class="precio">S/ 339.00</span>
+     <div class="botones-producto">
+      <a href="#producto6" class="boton-info">Ver información</a>
+      <button class="boton agregar" data-nombre="Nike Phantom" data-precio="339">Añadir al carrito</button>
+     </div>
+    </article>
+    <article class="producto" data-nombre="Puma Ultra">
+     <div class="imagen-producto">
+      <img src="/Puma ultra.webp" alt="Puma Ultra">
+     </div>
+     <h3>Puma Ultra</h3>
+     <p>Calzado deportivo de estilo moderno.</p>
+     <span class="precio">S/ 319.00</span>
+     <div class="botones-producto">
+      <a href="#producto7" class="boton-info">Ver información</a>
+      <button class="boton agregar" data-nombre="Puma Ultra" data-precio="319">Añadir al carrito</button>
+     </div>
+    </article>
+    <article class="producto" data-nombre="Adidas Copa">
+     <div class="imagen-producto">
+      <img src="/adidas-copa.avif" alt="Adidas Copa">
+     </div>
+     <h3>Adidas Copa</h3>
+     <p>Diseño clásico para futbolistas.</p>
+     <span class="precio">S/ 299.00</span>
+     <div class="botones-producto">
+      <a href="#producto8" class="boton-info">Ver información</a>
+      <button class="boton agregar" data-nombre="Adidas Copa" data-precio="299">Añadir al carrito</button>
+     </div>
+    </article>
+    <article class="producto" data-nombre="Nike Tiempo">
+     <div class="imagen-producto">
+      <img src="/nike-tiempo.webp" alt="Nike Tiempo">
+     </div>
+     <h3>Nike Tiempo</h3>
+     <p>Modelo para entrenamientos y partidos.</p>
+     <span class="precio">S/ 309.00</span>
+     <div class="botones-producto">
+      <a href="#producto9" class="boton-info">Ver información</a>
+      <button class="boton agregar" data-nombre="Nike Tiempo" data-precio="309">Añadir al carrito</button>
+     </div>
+    </article>
+    <article class="producto" data-nombre="Puma King">
+     <div class="imagen-producto">
+      <img src="/puma king.webp" alt="Puma King">
+     </div>
+     <h3>Puma King</h3>
+     <p>Diseño clásico con estilo deportivo.</p>
+     <span class="precio">S/ 289.00</span>
+     <div class="botones-producto">
+      <a href="#producto10" class="boton-info">Ver información</a>
+      <button class="boton agregar" data-nombre="Puma King" data-precio="289">Añadir al carrito</button>
+     </div>
+    </article>
+   </div>
+
+   <!-- CARRITO -->
+   <aside id="carrito" class="carrito">
+    <h3>Tu carrito</h3>
+    <div id="lista-carrito">
+     <p class="carrito-vacio">Agrega productos desde la tienda.</p>
+    </div>
+    <div class="envio">
+     <h4>Tipo de envío</h4>
+     <label><input type="radio" name="envio" value="Delivery" checked> Delivery</label>
+     <label><input type="radio" name="envio" value="Recojo en tienda"> Recojo en tienda</label>
+    </div>
+    <div class="total">
+     <span>Total</span>
+     <strong id="total-carrito">S/ 0.00</strong>
+    </div>
+    <button type="button" class="boton-comprar" id="comprar">Continuar por WhatsApp</button>
+    <p id="mensaje-carrito" class="mensaje-carrito"></p>
+   </aside>
+  </div>
+ </section>
+
+ <!-- INFORMACIÓN DE PRODUCTOS -->
+ <section id="producto1" class="producto-detalle">
+  <div class="detalle-contenido">
+   <a href="#tienda" class="cerrar"></a>
+   <img src="/niike 1.webp" alt="Nike Air Max">
+   <div class="detalle-texto">
+    <h2>Nike Air Max</h2>
+    <p>Zapatilla deportiva para el uso diario.</p>
+    <p><strong>Tallas:</strong> 38, 39, 40, 41 y 42.</p>
+    <span class="precio">S/ 299.00</span>
+    <button class="boton agregar" data-nombre="Nike Air Max" data-precio="299">Añadir al carrito</button>
+   </div>
+  </div>
+ </section>
+ <section id="producto2" class="producto-detalle">
+  <div class="detalle-contenido">
+   <a href="#tienda" class="cerrar"></a>
+   <img src="/adidas 1.webp" alt="Adidas Predator">
+   <div class="detalle-texto">
+    <h2>Adidas Predator</h2>
+    <p>Modelo deportivo para entrenamientos y partidos.</p>
+    <p><strong>Tallas:</strong> 38, 39, 40, 41 y 42.</p>
+    <span class="precio">S/ 349.00</span>
+    <button class="boton agregar" data-nombre="Adidas Predator" data-precio="349">Añadir al carrito</button>
+   </div>
+  </div>
+ </section>
+ <section id="producto3" class="producto-detalle">
+  <div class="detalle-contenido">
+   <a href="#tienda" class="cerrar"></a>
+   <img src="/adidas 3.jpg" alt="Puma Future">
+   <div class="detalle-texto">
+    <h2>Puma Future</h2>
+    <p>Diseño deportivo con comodidad y buen ajuste.</p>
+    <p><strong>Tallas:</strong> 38, 39, 40, 41 y 42.</p>
+    <span class="precio">S/ 279.00</span>
+    <button class="boton agregar" data-nombre="Puma Future" data-precio="279">Añadir al carrito</button>
+   </div>
+  </div>
+ </section>
+ <section id="producto4" class="producto-detalle">
+  <div class="detalle-contenido">
+   <a href="#tienda" class="cerrar"></a>
+   <img src="/nike 2.webp" alt="Nike Mercurial">
+   <div class="detalle-texto">
+    <h2>Nike Mercurial</h2>
+    <p>Modelo ligero para jugar fútbol.</p>
+    <p><strong>Tallas:</strong> 38, 39, 40, 41 y 42.</p>
+    <span class="precio">S/ 329.00</span>
+    <button class="boton agregar" data-nombre="Nike Mercurial" data-precio="329">Añadir al carrito</button>
+   </div>
+  </div>
+ </section>
+ <section id="producto5" class="producto-detalle">
+  <div class="detalle-contenido">
+   <a href="#tienda" class="cerrar"></a>
+   <img src="/adidas 3.webp" alt="Adidas F50">
+   <div class="detalle-texto">
+    <h2>Adidas F50</h2>
+    <p>Chimpunes con diseño ligero.</p>
+    <p><strong>Tallas:</strong> 38, 39, 40, 41 y 42.</p>
+    <span class="precio">S/ 359.00</span>
+    <button class="boton agregar" data-nombre="Adidas F50" data-precio="359">Añadir al carrito</button>
+   </div>
+  </div>
+ </section>
+ <section id="producto6" class="producto-detalle">
+  <div class="detalle-contenido">
+   <a href="#tienda" class="cerrar"></a>
+   <img src="/nike 3.webp" alt="Nike Phantom">
+   <div class="detalle-texto">
+    <h2>Nike Phantom</h2>
+    <p>Modelo deportivo para jugar fútbol.</p>
+    <p><strong>Tallas:</strong> 38, 39, 40, 41 y 42.</p>
+    <span class="precio">S/ 339.00</span>
+    <button class="boton agregar" data-nombre="Nike Phantom" data-precio="339">Añadir al carrito</button>
+   </div>
+  </div>
+ </section>
+ <section id="producto7" class="producto-detalle">
+  <div class="detalle-contenido">
+   <a href="#tienda" class="cerrar"></a>
+   <img src="/Puma ultra.webp" alt="Puma Ultra">
+   <div class="detalle-texto">
+    <h2>Puma Ultra</h2>
+    <p>Calzado deportivo de estilo moderno.</p>
+    <p><strong>Tallas:</strong> 38, 39, 40, 41 y 42.</p>
+    <span class="precio">S/ 319.00</span>
+    <button class="boton agregar" data-nombre="Puma Ultra" data-precio="319">Añadir al carrito</button>
+   </div>
+  </div>
+ </section>
+ <section id="producto8" class="producto-detalle">
+  <div class="detalle-contenido">
+   <a href="#tienda" class="cerrar"></a>
+   <img src="/adidas-copa.avif" alt="Adidas Copa">
+   <div class="detalle-texto">
+    <h2>Adidas Copa</h2>
+    <p>Diseño clásico para futbolistas.</p>
+    <p><strong>Tallas:</strong> 38, 39, 40, 41 y 42.</p>
+    <span class="precio">S/ 299.00</span>
+    <button class="boton agregar" data-nombre="Adidas Copa" data-precio="299">Añadir al carrito</button>
+   </div>
+  </div>
+ </section>
+ <section id="producto9" class="producto-detalle">
+  <div class="detalle-contenido">
+   <a href="#tienda" class="cerrar"></a>
+   <img src="/nike-tiempo.webp" alt="Nike Tiempo">
+   <div class="detalle-texto">
+    <h2>Nike Tiempo</h2>
+    <p>Modelo para entrenamientos y partidos.</p>
+    <p><strong>Tallas:</strong> 38, 39, 40, 41 y 42.</p>
+    <span class="precio">S/ 309.00</span>
+    <button class="boton agregar" data-nombre="Nike Tiempo" data-precio="309">Añadir al carrito</button>
+   </div>
+  </div>
+ </section>
+ <section id="producto10" class="producto-detalle">
+  <div class="detalle-contenido">
+   <a href="#tienda" class="cerrar"></a>
+   <img src="/puma king.webp" alt="Puma King">
+   <div class="detalle-texto">
+    <h2>Puma King</h2>
+    <p>Diseño clásico con estilo deportivo.</p>
+    <p><strong>Tallas:</strong> 38, 39, 40, 41 y 42.</p>
+    <span class="precio">S/ 289.00</span>
+    <button class="boton agregar" data-nombre="Puma King" data-precio="289">Añadir al carrito</button>
+   </div>
+  </div>
+ </section>
+ <!-- DESTACADOS -->
+ <section id="destacados" class="seccion destacados">
+  <h2>Más destacados</h2>
+  <div class="destacados-contenido">
+   <article class="destacado">
+    <img src="/mbappe 1.jpg" alt="Nike Air Max">
+    <div>
+     <h3>Nike Air Max</h3>
+     <p>S/ 299.00</p>
+     <a href="#producto1" class="boton">Ver producto</a>
+    </div>
+   </article>
+   <article class="destacado">
+    <img src="/destacadas.webp" alt="Adidas Predator">
+    <div>
+     <h3>Adidas Predator</h3>
+     <p>S/ 349.00</p>
+     <a href="#producto2" class="boton">Ver producto</a>
+    </div>
+   </article>
+   <article class="destacado">
+    <img src="/destacadas-2.jpg" alt="Puma Future">
+    <div>
+     <h3>Puma Future</h3>
+     <p>S/ 279.00</p>
+     <a href="#producto3" class="boton">Ver producto</a>
+    </div>
+   </article>
+  </div>
+ </section>
+ <!-- CONTACTO -->
+ <section id="contacto" class="seccion contacto">
+  <h2>Contacto</h2>
+  <div class="contacto-contenido">
+   <article class="informacion-contacto">
+    <h3>Contáctanos</h3>
+    <p>Escríbenos para consultar sobre nuestros productos.</p>
+    <p><strong>Correo:</strong> contacto@savage.com</p>
+    <p><strong>WhatsApp:</strong> +51 927 995 288</p>
+    <p><strong>Horario:</strong><br>Lunes a sábado<br>9:00 a.m. - 7:00 p.m.</p>
+    <div class="redes">
+     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+     <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
+    </div>
+   </article>
+   <form class="formulario" id="formulario-contacto">
+    <h3>Solicita información</h3>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" required placeholder="Tu nombre">
+    <label for="whatsapp">Tu WhatsApp</label>
+    <input type="tel" id="whatsapp" required placeholder="Tu número de contacto">
+    <label for="provincia">Provincia</label>
+    <input type="text" id="provincia" placeholder="Escribe tu provincia"required>
+    <label for="distrito">Distrito</label>
+    <input type="text" id="distrito" placeholder="Escribe tu distrito" required>
+    <label for="cantidad">Cantidad de productos</label>
+    <input type="number" id="cantidad" min="1" value="1" required>
+    <label for="producto-consulta">Producto de interés</label>
+    <select id="producto-consulta" required>
+     <option value="">Selecciona un producto</option>
+     <option>Nike Air Max</option>
+     <option>Adidas Predator</option>
+     <option>Puma Future</option>
+     <option>Nike Mercurial</option>
+     <option>Adidas F50</option>
+     <option>Nike Phantom</option>
+     <option>Puma Ultra</option>
+     <option>Adidas Copa</option>
+     <option>Nike Tiempo</option>
+     <option>Puma King</option>
+    </select>
+    <button type="submit" class="boton">Contactar por WhatsApp</button>
+    <p id="estado-ubicaciones" class="mensaje-carrito"></p>
+   </form>
+  </div>
+ </section>
+</main>
+<footer>
+ <p>© 2026 SAVAGE - Tienda de calzado deportivo</p>
+</footer>
+</body>
+</html>
